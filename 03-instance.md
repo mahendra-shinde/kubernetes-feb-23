@@ -17,12 +17,12 @@
 	```text
 	docker run --name c1 -it ubuntu bash
 	        |    |     |   |   |     |
-			|    |     |   |   |     +---------- Command or Process for "-it" mode
-			|    |     |   |   +---------------- Image tag
-			|    |     |   +-------------------- Interactive Mode for container.
-			|    |     +------------------------ Logical Name assigned to container (Must be unqiue)    
-			|    +------------------------------ Assigne logical name
-			+----------------------------------- Command to launch new container (instance) 
+	        |    |     |   |   |     +---------- Command or Process for "-it" mode
+	        |    |     |   |   +---------------- Image tag
+	        |    |     |   +-------------------- Interactive Mode for container.
+	        |    |     +------------------------ Logical Name assigned to container (Must be unqiue)    
+	        |    +------------------------------ Assigne logical name
+	        +----------------------------------- Command to launch new container (instance) 
 	```
 
 3.	Install some packages.
