@@ -1,0 +1,29 @@
+# Network
+
+## Network Types / Drivers (Linux)
+
+1.	Network `none` uses driver `null`
+
+	docker run --net none .... IMAGENAME
+
+2.	Network `host` uses driver `host`
+
+	Do not create a new docker-network. instead, connect to HOST Network !
+
+	- Expose your container to HOST NETWORK.
+	- Cannot use PORT already in use.
+
+
+3.	Network `bridge` uses driver `bridge`
+
+	Allows creation of container network, which will be linked to host network!
+
+4.	Single container can be member of multiple networks.
+
+5.	To connect existing container to an existing network
+
+	docker network connect NETNAME CONT_NAME
+
+6.	To Disconnect container from a network
+
+	docker network disconnect NETNAME CONT_NAME
