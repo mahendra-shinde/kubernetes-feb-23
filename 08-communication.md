@@ -27,6 +27,4 @@
 
 ## Advantage
 1.	All communication Async (Event Based)	
-1.	Every component is independently scalable, updatable & replacable.
-
-					
+1.	Every component is independently scalable, updatable & replaceable.
