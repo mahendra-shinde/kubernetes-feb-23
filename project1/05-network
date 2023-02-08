@@ -26,4 +26,4 @@
 
 6.	To Disconnect container from a network
 
-	docker network disconnect NETNAME CONT_NAME
+	docker network disconnect NETNAME 
