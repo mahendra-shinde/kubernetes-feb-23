@@ -42,7 +42,7 @@ person:
 ````
 
 > YAML files are case-sensitive (At least kubernetes manifest )
-> Idents in YAML defines parent-child relation
+> Indents in YAML defines parent-child relation
 
 ```yml
 person:
@@ -50,4 +50,19 @@ person:
   lastName: shinde
 address:
   city: Navi Mumbai
+```
+
+## Typical Kubernetes Manifest using YAML
+
+```yml
+apiVersion : VERSION_NUM
+kind: ObjectType
+metadata:
+  name: ObjectName
+  namespace: Namespace_Name
+  labels:   
+    KEY:VALUE
+spec:
+  mainProperties:
+    childProperties: value
 ```
