@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: app2
+spec:
+  selector:
+    matchLabels:
+      app: app2
+  serviceName: app2-headless
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: app2
+    spec:
+      containers:
+      - name: web
+        image: mahendrshinde/myweb:1
+        resources:
+          requests:
+            cpu: 100m
+            memory: 32Mi
+        ports:
+        - containerPort: 80
+          name: web
+---
+apiVersion:  v1
+kind: Service
+metadata:
+  name: app2-headless
+spec:
+  type: ClusterIP
+  clusterIP : None

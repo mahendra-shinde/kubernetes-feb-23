@@ -1,0 +1,20 @@
+# Set of PODS
+
+1.  ReplicaSet
+
+    1. Faster Pod creation and deletion
+    2. Enables self-healing
+    3. Supports Manual and Auto-scaling (HPA)
+    4. While Scaling UP, replica-set creates multiple pods in parallel.
+
+2.  StatefulSet
+
+    1. Slower Pod creation and deletion than Other sets
+    2. Pod creation is always in SEQUENCE.
+    3. Each POD retains it's name after self-heal
+
+
+3.  DaemonSet
+
+    1. Doesnot Support Auto-scaling
+    2. Scaling is linked to Node-scaling.

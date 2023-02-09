@@ -16,11 +16,11 @@ spec:
           persistentVolumeClaim:
             claimName: claim1
       containers:
-      - name: myapp1
-        image: nginx:alpine
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "50m"
-        ports:
-        - containerPort: 80
+        - name: myapp1
+          image: nginx:alpine
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "50m"
+          ports:
+            - containerPort: 80
